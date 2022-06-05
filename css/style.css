@@ -136,7 +136,7 @@ body{
 }
 
 .row{
-    width: 960px;
+    width: calc(960px - 10px); 
     display:flex;
     flex-direction: row;
     margin: 0 auto;
@@ -144,10 +144,11 @@ body{
     
 }
 
+
 .col{
     width:160px;
     height: 200px;
-    padding: 10px;
+    margin: 0 5px;
     border: 1px solid #fff;
     margin-bottom: 120px;
 }
@@ -204,3 +205,33 @@ body{
     color: #fff;
 }
 
+.player{
+    width: 400px;
+    height: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-menu{
+    width: 100%;
+    height: 50%;
+    border: 1px solid red;
+}
+
+.player-timing{
+    width: 100%;
+    height: 50%;
+    border: 1px solid yellow;
+}
+
+.footer-icon{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.footer-icon i{
+    padding:0 5px;
+}
