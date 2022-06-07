@@ -131,6 +131,10 @@ body{
     width: 90%;
 }
 
+.sidebar-footer *{
+    cursor: pointer;
+}
+
 #user{
     background-color: #888A8E;
     width: 25px;
@@ -195,6 +199,7 @@ body{
    list-style-type: none;
    padding:10px;
    font-size: 0.8rem;
+   cursor: pointer;
 }
 
 .main-box h3{
@@ -202,8 +207,7 @@ body{
 }
 
 .row img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 .main-box .section{
@@ -239,6 +243,10 @@ body{
     padding-bottom: 10px;
 }
 
+.section h5{
+    padding-top: 20px;
+}
+
 /* footer */
 .footer-box{
     height: 80px;
@@ -252,7 +260,7 @@ body{
 }
 
 .track-menu{
-    width: 250px;
+    width: 230px;
     display: flex;
     align-items:center;
     padding: 0 20px;
@@ -313,25 +321,28 @@ body{
     width: 100%;
     height: 50%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 
 .player-timing div{
     color: #fff;
-    margin: 0 auto;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    padding: 0 8px;
 }
 
 .progress-bar{
-    width: 250px;
+    width: 100%;
     height: 3px;
-    border-radius: 25%;;
+    border-radius: 25px;
     background-color:#141922;
 }
 
 .progress-value{
     background-color: #888A8E;
     height: 100%;
+    margin: 0;
 }
 
 .player-timing .progress-bar .progress-value{
@@ -339,8 +350,10 @@ body{
 }
 
 .footer-icon{
+    width: 230px;
     display: flex;
     color: #fff;
+    justify-content: space-between;
     align-items: center;
     margin-right: 50px;
 }
@@ -350,7 +363,7 @@ body{
 }
 
 .footer-icon .progress-bar{
-    width: 100px;
+    width: 100%;
 }
 
 .footer-icon .progress-bar .progress-value{
@@ -360,7 +373,7 @@ body{
 /* EFFECTS */
 
 .row .col:hover .card{
-    transform: translateY(-10px); scale: 1.2;
+    transform: translateY(-10px); scale: 1.1;
 }
 
 .col .card{
@@ -393,4 +406,7 @@ a.button:hover{
     text-shadow: 0 0 5px #fff;
 }
 
+#play:hover{
+    transform: scale(1.3);
+}
 
