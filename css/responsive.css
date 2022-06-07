@@ -1,13 +1,18 @@
 @media screen and (max-width:992px) {
     .row{
-        flex-wrap: wrap;
         width: 680px;
+        flex-wrap: wrap;
     }
 
     .col{
         width: 130px;
         margin-left: 20px;
     }
+
+    .card{
+        padding: 0 30px;
+    }
+
     
 
     .main-box ul{
@@ -18,13 +23,13 @@
 
 @media screen and (max-width:768px) {
     .row{
-        flex-wrap: wrap;
         width: 560px;
+        flex-wrap: wrap;
     }
 
     .col{
         width: 180px;
-        margin-left: 60px;
+        margin-left: 30px;
     }
     
     .main-box li{
@@ -38,6 +43,10 @@
         width: 50px;
     }
 
+    .main-box{
+        width: calc(100% - 50px);
+    }
+
     span{
         display: none;
     }
@@ -46,10 +55,12 @@
         display: none;
     }
 
+    .sidebar{
+        padding-left:12px;
+    }
+
     #logo{
-        width: 100px;
-        position: relative;
-        left:15px;
+        width: 110px;
     }
 
     .sidebar-footer div, span{
